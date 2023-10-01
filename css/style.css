@@ -1,0 +1,949 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2B2D42;
+    /* background: linear-gradient(143.03deg, #333F52 1.37%, rgba(29, 51, 84, 0) 78.53%);  */
+    position: relative;
+    width: 100%;
+    height: 2700px;
+}
+.my-container-fluid{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+.my-navbar-brand{
+    margin-left: 2%;
+}
+.my-nav{
+    display: flex;
+    margin-top: 1%;
+    margin-right: 5%;
+}
+.my-btn-signUp{
+    margin-top: 1%;
+    margin-left: 8%;
+    width: 150px;
+    border-radius: 12px;
+    height: 42px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    background: #580AFF;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.my-btn-signUp:hover{
+    border: 1px solid white;
+}
+.my-btn-login{
+    margin-top: 1%;
+    width: 80px;
+    height: 42px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-light{
+    height: 35px;
+    width: 150px;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.my-nav img{
+    width: 35px;
+    height: 35px;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.section1{
+    height: 595px;
+    /* border: 1px solid white; */
+
+}
+.image{
+    height: 80vh;
+    border-radius: 15px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+    padding: 4%;
+    background-image: url("../assets/Night.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* https://fpdl.in/uploads/20231001081815_[fpdl.in]_night-ocean-landscape-full-moon-stars-shine_107791-7397_medium.jpg */
+}
+.search-bar{
+    width: 100%;
+    height: 36px;
+    font-style: normal;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    line-height: 36px;
+    padding: 1%;
+    color: #FFFFFF;
+}
+::placeholder{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.bx{
+    font-size: 30px;
+    color: white;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.weather-deatils{
+    display: flex;
+    margin-top: 250px;
+
+}
+.location{
+    width: 50%;
+}
+.local-time{
+    margin-left: 35%;
+    margin-top: 1%;
+    /* border: 1px solid white; */
+}
+.local-time label{
+    color: white;
+    font-size: 30px;
+}
+label{
+    color: white;
+    font-size: 30px;
+    /* border: 1px solid white; */
+}
+.lbl-location{
+    color: white;
+    font-size: 30px;
+}
+.div-img{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+}
+.sun{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-left: 155px;
+    margin-top: -1px;
+    /* border: 1px solid white; */
+}
+.temp{
+    font-size: 50px;
+    /* border: 1px solid white; */
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(217, 217, 217, 0.28);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.section2{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 540px;
+}
+.weather-details2{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 50px;
+    margin-right: 3%;
+    position: absolute;
+    margin-right: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.today-highlights{
+    width: 70%;
+    height: 510px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px; 
+}
+.forecast{
+    width: 50%;
+    height: 510px;
+    margin-left: 3%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.today-highlights h2{
+    color: white;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-size: 35px;
+    
+}
+.today-highlights hr{
+    margin-left: 3%;
+    margin-right: 3%;
+   
+}
+.today-highlights-div1{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+.temperature{
+    width: 250px;
+    margin: 3%;
+    height: 161.99px;
+    background: rgba(217, 217, 217, 0.22);
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.temperature:hover{
+    border: 1px solid white;
+}
+
+.temperature h4{
+    color: white;
+    margin-left: 6%;
+    margin-top: 4%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.box{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 7%;
+}
+.weather-icons{
+    /* border: 1px solid red; */
+    width: 40%;
+    padding: 3%;
+ }
+.weather-icons img{
+    width: 30px;
+}
+.weather-deatils-values{
+    /* border: 1px solid black; */
+    padding: 5%;
+}
+.weather-deatils-values label{
+    font-size: 25px;
+}
+.today-highlights-div2{
+    height: 100px;
+    display: flex;
+}
+.forecast h2{
+    color: white;
+    margin-left: 6%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    font-size: 35px;
+    
+}
+.forecast table{
+    width: 85%;
+    margin-left: 6%;
+    /* margin-right: 3%; */
+    /* margin-top: %; */
+}
+table tr{
+    height: 100px;
+}
+table td{
+    color: white;
+    /* padding: 1%; */
+    padding-top: 3%;
+    font-size: 20px;
+}
+table td img{
+    width: 60px;
+}
+.forecast hr{
+    margin-left: 5%;
+    margin-right: 5%;
+   
+}
+.day-forecast{
+    border: 1px solid white;
+    padding: 5%;
+}
+.day-forecast label{
+    font-size: 30px;
+    padding-top: 3%;
+}
+.section3{
+    /* border: 1px solid white; */
+    height: 350px;
+}
+.section3 h2{
+    margin-left: 3%;
+    color: white;
+    font-size: 35px;
+}
+.section3 hr{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1%;
+}
+.previous-weather{
+    /* border: 1px solid white; */
+    height: 50px;
+    display: flex;
+    margin-right: 3%;
+   
+}
+.weather-data{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 244px;
+    margin-left: 3%;
+    margin-top: 2%;
+    background: rgba(255, 255, 255, 0.17);
+    box-shadow: 5px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.weather-data:hover{
+    border: 1px solid white;
+}
+.date{
+    /* border: 1px solid white; */
+    height: 25%;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+}
+.date label{
+    font-size: 20px;
+}
+.weather-img{
+    /* border: 1px solid white; */
+    height: 25%;
+    margin: 5%;
+}
+.weather-img img{
+    width: 60px;
+    margin-left: 30%;
+}
+.temp-value{
+    /* border: 1px solid white; */
+    height: 25%;
+    margin-top: 25%;
+    text-align: center;
+    
+}
+.temp-value label{
+    font-size: 20px;
+    margin-top: 5%;
+}
+.section4{
+    /* border: 1px solid white; */
+    height: 530px;
+}
+.section4-div{
+    /* margin-left: 3%; */
+    /* margin-right: 3%; */
+    margin-top: 1%;
+    display: flex;
+}
+.map{
+   /* border: 1px solid white; */
+    height: 500px;
+   width: 80%;
+   margin-left: 7%;
+   margin-right: 3%;
+   background: rgba(255, 255, 255, 0.1);
+   box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 15px;
+}
+.map iframe{
+    border-radius: 15px;
+    width: 100%;
+}
+.calender{
+    width: 80%;
+    margin-left: 3%;
+    margin-right: 7%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px; 
+}
+.form-group{
+    margin: 3%;
+    height: 7%;
+}
+.form-group input{
+    width: 50%;
+    height: 100%;
+    margin-left: 3%;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+}
+.calender h3{
+    color: white;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 35px;
+}
+.calender hr{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.section5{
+    /* border: 1px solid white; */
+    height: 500px;
+}
+.section5-div{
+    /* border: 1px solid white; */
+    margin-top: 1%;
+    display: flex;
+
+}
+.starter{
+    width: 400px;
+    height: 500px;
+    margin-left: 20%;
+    margin-right: 7%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px; 
+}
+.starter:hover{
+    border: 1px solid white;
+}
+.pro{
+    width: 400px;
+    height: 500px;
+    /* margin-left: 3%; */
+    margin-right: 15%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;   
+}
+.pro:hover{
+    border: 1px solid white;
+}
+.hedding{
+    /* border: 1px solid white; */
+    height: 10%;
+    margin: 5%;
+    margin-top: 7%;
+    text-align: center;
+}
+.hedding h3{
+    color: white;
+    font-size: 30px;
+}
+.content{
+    /* border: 1px solid white; */
+    height: 50%;
+    margin-left: 8%;
+    margin-right: 7%;
+    margin-top: 10%;
+}
+.button-div{
+    /* border: 1px solid white; */
+    height: 10%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxes{
+    /* border: 1px solid white; */
+    height: 20%;
+    display: flex;
+}
+.icon{
+    /* border: 1px solid white; */
+    width: 10%;
+}
+.icon img{
+  width: 80%;
+}
+.text{
+    margin: 3%;
+}
+.text p{
+    color: white;
+    font-size: 20px;
+}
+.button-div button{
+    width: 150px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    background: #580AFF;
+    border-radius: 10px;
+    border: none;
+}
+.history-date{
+    font-size: 22px;
+    margin-left: 5%;
+    
+}
+.table1{
+    margin-top: 3%;
+    margin-left: 5%;
+    /* margin-right: 5%; */
+    /* margin: 5%; */
+    width: 80%;
+    
+}
+.table2{
+    margin-left: 5%;
+    /* margin-right: 5%; */
+    /* margin: 5%; */
+    width: 80%;
+    
+}
+.table1 tr{
+    width: 100%;
+    margin: 3%;
+    padding: 3%;
+}
+.selectDate{
+    background: white;
+    color: black;
+    font-size: 18px;
+    width: 30%;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    
+}
+.selectDate:hover{
+   border: 2px solid black;
+}
+.alert{
+    
+    background: rgba(217, 217, 217, 0.28);
+    border-radius: 10px;
+    margin-top: 0.5%;
+    padding: 0.5%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.alert:hover{
+    border: 1PX solid red;
+}
+.alert label{
+    font-size: 20px;
+    color: red;
+}
+
+@media (max-width: 1440px) {
+    .section2{
+        margin-top: 6%;
+    }
+    .temp{
+        font-size: 50px;
+    }
+    .local-time label{
+        color: white;
+        font-size: 40px;
+    }
+    .lbl-location{
+        color: white;
+        font-size: 40px;
+    }
+    .local-time{
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section2{
+        margin-top: -12%;
+    }
+    .location{
+        width: 50%;
+        margin-top: -10%;
+    }
+    .local-time{
+        margin-left: 30%;
+        margin-top: -10%;
+    }
+    .local-time label{
+        color: white;
+        font-size: 30px;
+    }
+    .lbl-location{
+        color: white;
+        font-size: 30px;
+    }
+    .temp{
+        font-size: 40px;
+    }
+    .image{
+        height: 70vh;
+    }
+    .my-btn-signUp{
+        margin-top: 1.5%;
+        margin-left: 8%;
+        width: 145px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .today-highlights{
+        width: 55%;
+
+    }
+    .today-highlights h2{
+        font-size: 32px;
+        
+    }
+    .forecast h2{
+        font-size: 32px;
+        
+    }
+    .temperature h4{
+       font-size: 15px;
+    }
+    .section3 h2{
+        font-size: 32px;
+    }
+    .calender h3{
+        font-size: 32px;
+    }
+    .starter{
+        width: 480px;
+        height: 500px;
+        margin-left: 12%;
+        margin-right: 7%;
+    }
+    .pro{
+        width: 480px;
+        height: 500px;
+        margin-right: 12%;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;   
+    }
+
+    /* tablet max width 768 */
+
+    @media (max-width: 768px){
+        .section2{
+            margin-top: -26%;
+        }
+
+        .logo{
+            width: 50px;
+        }
+        .my-btn-signUp{
+            margin-top: 1.5%;
+            margin-left: 8%;
+            width: 140px;
+            height: 38px;
+            font-size: 16px;
+        }
+        .my-nav img{
+            width: 30px;
+            height: 30px;
+            margin-top: 3%;
+            margin-left: 5%;
+        }
+        .location{
+            width: 50%;
+            margin-top: -14%;
+        }
+        .local-time{
+            margin-left: 30%;
+            margin-top: -14%;
+        }
+        .local-time label{
+            color: white;
+            font-size: 25px;
+        }
+        .lbl-location{
+            color: white;
+            font-size: 25px;
+        }
+        .temp{
+            font-size:30px;
+        }
+        .image{
+            height: 60vh;
+        }
+        .bx{
+            font-size: 20px;
+        }
+        .today-highlights h2{
+            font-size: 28px;
+        }
+        .forecast h2{
+            font-size: 28px;
+        }
+        .calender h3{
+            font-size: 28px;
+        }
+        .temperature h4{
+            margin-top: 15px;
+            margin-left: 10px;
+           font-size: 13px;
+        }
+        .temperature{
+            width: 200px;
+            margin: 2%;
+            height: 160px;
+        }
+        .weather-deatils-values label{
+            font-size: 19px;
+        } 
+        .weather-icons img{
+            width: 25px;
+        }
+        .forecast table{
+            width: 100%;
+            margin-left: 2%;
+        }
+        table td{
+            font-size: 16px;
+        }
+        table td img{
+            width: 40px;
+        }
+        .date label{
+            font-size: 15px;
+        }
+        .temp-value label{
+            font-size: 15px;
+        
+        }
+        .weather-img img{
+            width: 35px;
+            margin-left: 30%;
+        }
+        .selectDate{
+            font-size: 15px;
+            width: 110px;
+            height: 35px;
+        }
+        .starter{
+            width: 490px;
+            height: 500px;
+            margin-left: 10%;
+            margin-right: 7%;
+        }
+        .pro{
+            width: 490px;
+            margin-right: 10%;   
+        }
+        .hedding h3{
+            font-size: 28px;
+        }
+        .hedding label{
+            font-size: 28px;
+        }
+        .text p{
+            font-size: 18px;
+        }
+        .button-div button{
+            width: 150px;
+            height: 35px;
+            font-size: 18px;
+           
+        }
+    }
+
+    /* Mobile small max width 320 */
+
+    @media (max-width: 320px){
+        .section2{
+            margin-top: -115%;
+        }
+
+        .my-btn-signUp{
+            margin-top: 1.5%;
+            margin-left: 8%;
+            width: 140px;
+            height: 35px;
+            font-size: 16px;
+        }
+        .my-btn-login{
+            font-size: 18px;
+         
+        }
+        .my-nav img{
+            width: 20px;
+            height: 20px;
+        }
+        .image{
+            height: 35vh;
+        }
+        .location{
+            width: 50%;
+            margin-top: -65%;
+        }
+        .local-time{
+            margin-left: 15%;
+            margin-top: -65%;
+        }
+        .local-time label{
+            color: white;
+            font-size: 20px;
+        }
+        .lbl-location{
+            color: white;
+            font-size: 20px;
+        }
+        .temp{
+            font-size:25px;
+        }
+        .weather-details2{
+            width: 100%;
+            height: 500px;
+            margin-right: 3%;
+            display: flex;
+            flex-direction: column;
+        }
+        .search-bar{
+            height: 30px;
+            font-size: 16px;
+          
+        }
+        .today-highlights{
+            width: 100%;
+            height: 600px;
+          
+        }
+        .today-highlights h2{
+            font-size: 25px;
+        }
+        .forecast h2{
+            font-size: 25px;
+        }
+        .calender h3{
+            font-size: 25px;
+        }
+        .temperature{
+            width: 150px;
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-top: 5%;
+            height: 130px;
+        }
+        .today-highlights-div2{
+            margin-top: -50px;
+            height: 165px;
+        }
+        .today-highlights{
+            width: 100%;
+            height: 510px; 
+        }
+        .forecast{
+            margin-top: 25px;
+            width: 100%;
+            height: 510px;
+            margin-left: 1%;
+            margin-right: 5%;
+    
+        }
+        .weather-deatils-values label{
+            font-size: 17px;
+        } 
+        .weather-icons img{
+            width: 20px;
+        }
+        .section3{
+            margin-top: 220px;
+        }
+        .section3 h2{
+            font-size: 25px;
+        }
+        .previous-weather{
+            height: 1200px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 3%;
+            margin-left: 3%;
+        }
+        .weather-data{
+            /* border: 1px solid white; */
+            width: 150px;
+            height: 250px;
+            margin-left: 25%;
+            margin-top: 2%;
+            background: rgba(255, 255, 255, 0.17);
+            box-shadow: 5px 8px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+        }
+        .section4{
+            margin-top: 900px;
+        }
+        .section4-div{
+            display: flex;
+            flex-direction: column;
+        }
+        .map{
+            height: 300px;
+            width: 90%;
+            margin-left: 3%;
+            margin-right: 3%;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+         }
+         .map iframe{
+            border-radius: 15px;
+            width: 100%;
+            height: 300px;
+        }.calender{
+            margin-top: 20px;
+            height: 400px;
+            width: 92%;
+        }
+        .selectDate{
+            font-size: 15px;
+            width: 90px;
+            height: 32px;
+        }
+        .section5-div{
+            margin-top: 210px;
+        }
+        .section5-div{
+            display: flex;
+            flex-direction: column;
+        }
+        .starter{
+            width: 92%;
+            margin-left: 3%;
+        }
+        .pro{
+            margin-top: 20px;
+            width: 92%;
+            margin-left: 3%;
+        }
+    }
+}
+
+
+
